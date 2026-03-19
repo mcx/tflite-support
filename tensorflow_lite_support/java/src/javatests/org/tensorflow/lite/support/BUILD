@@ -442,9 +442,6 @@ android_library(
 android_library_instrumentation_tests(
     name = "instrumented_unittests",
     srcs = INSTRUMENTED_TESTS,
-    binary_args = {
-        "multidex": "legacy",
-    },
     device_list = DEFAULT_INSTRUMENTED_DEVICES,
     tags = [
         "no_oss",
